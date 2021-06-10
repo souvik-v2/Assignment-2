@@ -1,0 +1,8 @@
+- Necessary images are added in the "images" folder.
+- SVG formated Icons added in the "images" folder.
+- Below Google Fonts are used in the UI:
+1) "Montserrat" font used for "Headings & Navigation".
+- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,600&display=swap" rel="stylesheet">
+
+2) "Nunito Sans" font used for "Content".
+- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,600&family=Nunito+Sans:wght@300;400&display=swap" rel="stylesheet">

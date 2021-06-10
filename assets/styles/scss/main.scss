@@ -1,0 +1,316 @@
+@import 'variable';
+
+/* Carousel Section */
+.carousel {
+    background: url(../../images/bg.jpg) no-repeat top left 35%;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+
+
+    @media #{$md-down} {
+        background-image: radial-gradient(#dbdec3, #dbdec3);
+        height: 100%;
+    }
+}
+
+header {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 42px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .mob-nav {
+        @media #{$sm-up} {
+            display: none;
+        }
+    }
+
+    nav {
+        @media #{$sm-down} {
+            display: none;
+            position: absolute;
+            background: $white;
+            top: 90px;
+            left: 15px;
+            width: calc(100% - 30px);
+            padding: 15px 25px;
+            border-radius: 5px;
+            box-shadow: 0 40px 15px -35px rgba($black, 0.4);
+        }
+
+        @media #{$sm-up} {
+            display: block !important;
+        }
+
+        a {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-left: 25px;
+            display: inline-flex;
+            align-items: center;
+            letter-spacing: 1px;
+
+            @media #{$lg-down} {
+                margin-left: 25px;
+            }
+
+            @media #{$md-down} {
+                margin-left: 12px;
+            }
+
+            @media #{$sm-down} {
+                display: block;
+                margin: 5px 0;
+            }
+
+        }
+    }
+}
+
+/* Slider Style */
+.slider {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+
+    .slider-content {
+        margin-left: 50%;
+        max-width: 410px;
+        flex-wrap: wrap;
+
+
+        @media #{$md-down} {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        @media #{$sm-down} {
+            max-width: 330px;
+            margin: 20px auto;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+    }
+}
+
+/* About Us */
+.about-us .sec-content, .development .sec-content {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 0;
+    text-align: center;
+
+    h4{
+        color: $black;
+        margin-bottom: 20px;
+    }
+
+    p {
+        line-height: 22px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+/* Development */
+
+.development {
+    background-color: #f5f5f5;
+
+
+    .development-info {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+
+        li {
+            width: calc(25% - 40px);
+
+            @media #{$xs-down} {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                width: 25%;
+            }
+
+            @media #{$vs-down} {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                width: 40%;
+            }
+
+            p {
+                font-size: 12px;
+                color: $grey;
+            }
+
+            h5 {
+                font-size: 16px;
+                font-weight: 600;
+                margin: 10px 0;
+                text-transform: uppercase;
+                word-spacing: 2px;
+            }
+        }
+    }
+
+}
+
+/* achivement */
+
+.achivement {
+    background-color: $blue;
+
+    .sec-content {
+        max-width: 900px;
+        margin: auto;
+        color: #fff;
+    }
+
+    .achivement-info {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px 0;
+
+        li {
+            width: calc(25% - 20px);
+            display: flex;
+            align-items: flex-start;
+
+            @media #{$xs-down} {
+                width: 20%;
+                display: block;
+                align-items: center;
+            }
+
+            img {
+                max-width: 50px;
+                margin-right: 20px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            h5 {
+                font-size: 16px;
+                font-weight: 600;
+                text-transform: uppercase;
+                word-spacing: 2px;
+                margin: 0;
+                text-align: left;
+            }
+        }
+    }
+}
+
+/* Contact Us Section*/
+.contact-us {
+    background-color: #f5f5f5;
+    @media #{$md-down} {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+    .sec-content {
+        margin: auto;
+        display: block;
+        text-align: center;
+        padding: 52px 0;
+
+        p {
+            font-size: 12px;
+            line-height: 20px;
+            color: #a5a393;
+        }
+
+        @media #{$md-up} {
+            max-width: 650px;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        input {
+            @media #{$xs-up} {
+                width: calc(50% - 10px);
+            }
+        }
+
+        .full-width {
+            width: 100%;
+        }
+        button {
+            margin: auto;
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+    }
+}
+
+/* Footer Section */
+footer {
+    background-color: #141414;
+
+    .footer-wrap {
+        max-width: 900px;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 70px 25px;
+
+        h5 {
+            font-size: 14px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: $grey;
+        }
+
+        p {
+            margin-bottom: 0;
+            color: $grey;
+            font-size: 13px;
+            line-height: 23px;
+        }
+
+        nav {
+            display: inline-grid;
+            flex-wrap: wrap;
+            gap: 6px;
+            align-items: center;
+        }
+
+    }
+
+    p, nav {
+
+        a {
+            font-size: 13px;
+            font-weight: 600;
+            color: $grey;
+            margin-left: 38px;
+            align-items: center;
+            
+        }
+    }
+
+}
