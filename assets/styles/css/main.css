@@ -102,7 +102,7 @@ header nav a {
 }
 .slider .slider-content p {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 20px;
 }
 
@@ -163,48 +163,40 @@ header nav a {
   word-spacing: 2px;
 }
 
-/* achivement */
+/* Achivement Section */
 .achivement {
   background-color: #10c9c3;
 }
-.achivement .sec-content {
-  max-width: 900px;
-  margin: auto;
-  color: #fff;
-}
-.achivement .achivement-info {
-  list-style: none;
+.achivement .cards {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
-  padding: 20px 0;
+  padding-top: 20px;
 }
-.achivement .achivement-info li {
-  width: calc(25% - 20px);
-  display: flex;
-  align-items: flex-start;
-}
-@media (max-width: 575px) {
-  .achivement .achivement-info li {
-    width: 20%;
-    display: block;
-    align-items: center;
+@media (min-width: 768px) {
+  .achivement .cards {
+    max-height: 120px;
   }
 }
-.achivement .achivement-info li img {
+.achivement .cards-item {
+  width: calc(25% - 20px);
+  min-height: 130px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.achivement .cards-item img {
   max-width: 50px;
   margin-right: 20px;
 }
-.achivement .achivement-info li p {
-  font-size: 12px;
-}
-.achivement .achivement-info li h5 {
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  word-spacing: 2px;
-  margin: 0;
-  text-align: left;
+@media (max-width: 575px) {
+  .achivement .cards-item {
+    width: calc(50% - 20px);
+    height: auto;
+    display: flex;
+  }
 }
 
 /* Contact Us Section*/
@@ -224,9 +216,10 @@ header nav a {
   padding: 52px 0;
 }
 .contact-us .sec-content p {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 20px;
   color: #a5a393;
+  font-weight: 600;
 }
 @media (min-width: 992px) {
   .contact-us .sec-content {

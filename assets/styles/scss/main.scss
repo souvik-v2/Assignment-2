@@ -101,7 +101,7 @@ header {
 
         p {
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 600;
             margin-top: 20px;
         }
     }
@@ -171,53 +171,43 @@ header {
 
 }
 
-/* achivement */
-
+/* Achivement Section */
 .achivement {
+
     background-color: $blue;
-
-    .sec-content {
-        max-width: 900px;
-        margin: auto;
-        color: #fff;
-    }
-
-    .achivement-info {
-        list-style: none;
+    
+    .cards {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         gap: 20px;
-        padding: 20px 0;
+        padding-top: 20px;
 
-        li {
+        @media #{$sm-up} {
+            max-height: 120px;
+        }
+
+        &-item {
             width: calc(25% - 20px);
+            min-height: 130px;
             display: flex;
             align-items: flex-start;
-
-            @media #{$xs-down} {
-                width: 20%;
-                display: block;
-                align-items: center;
-            }
+            justify-content: center;
 
             img {
                 max-width: 50px;
                 margin-right: 20px;
             }
 
-            p {
-                font-size: 12px;
-            }
+            @media #{$xs-down} {
+                width: calc(50% - 20px);
+                height: auto;
+                display: flex;
 
-            h5 {
-                font-size: 16px;
-                font-weight: 600;
-                text-transform: uppercase;
-                word-spacing: 2px;
-                margin: 0;
-                text-align: left;
             }
         }
+
     }
 }
 
@@ -236,9 +226,10 @@ header {
         padding: 52px 0;
 
         p {
-            font-size: 12px;
+            font-size: 13px;
             line-height: 20px;
-            color: #a5a393;
+            color: $grey;
+            font-weight: 600;
         }
 
         @media #{$md-up} {

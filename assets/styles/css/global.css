@@ -71,10 +71,10 @@ p {
 
 /* Form Element Style */
 input, textarea {
-  font-family: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
   font-weight: 600;
-  letter-spacing: 1px;
-  color: #202833;
+  color: #a5a393;
   width: 100%;
   background: #fff;
   padding: 20px 30px;
@@ -82,14 +82,8 @@ input, textarea {
   transition: all 0.3s;
 }
 input:focus, textarea:focus {
-  color: #ff487c;
-  background: #202833;
-}
-input::-moz-placeholder, textarea::-moz-placeholder {
-  text-transform: uppercase;
-}
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  text-transform: uppercase;
+  color: #e38547;
+  background: #293040;
 }
 
 /* Button Style */
@@ -150,14 +144,6 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   background: #ff487c;
 }
 
-.bg-dark-blue {
-  background: #293040;
-}
-
-.bg-light-grey {
-  background: #f3f2f7;
-}
-
 /* Grid Structure */
 .grid-2 {
   display: grid;
@@ -167,6 +153,11 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 .grid-3 {
   display: grid;
   grid-template-columns: 30% 30% 40%;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
 }
 
 @media (max-width: 991px) {
@@ -189,39 +180,9 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   }
 }
 
-/* Display Flex Style */
-.display-aic {
-  display: flex;
-  align-items: center;
-}
-
-.display-aic-jcfe {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
 /* Image Style */
 img {
   max-width: 100%;
-}
-
-.img-cover {
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: top;
-}
-@media (max-width: 991px) {
-  .img-cover {
-    width: 100%;
-    height: 500px;
-  }
-}
-@media (max-width: 767px) {
-  .img-cover {
-    height: 350px;
-  }
 }
 
 /*# sourceMappingURL=global.css.map */

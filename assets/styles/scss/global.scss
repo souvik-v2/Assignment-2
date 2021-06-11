@@ -71,10 +71,10 @@ p {
 
 /* Form Element Style */
 input, textarea {
-    font-family: inherit;
+    font-family: $montserrat;
+    font-size: 13px;
     font-weight: 600;
-    letter-spacing: 1px;
-    color: $black;
+    color: $grey;
     width: 100%;
     background: $white;
     padding: 20px 30px;
@@ -82,17 +82,10 @@ input, textarea {
     transition: all .3s;
 
     &:focus {
-        color: $pink;
-        background: $black;
+        color: $orange;
+        background: $dark-blue;
     }
 
-    &::-moz-placeholder {
-        text-transform: uppercase;
-    }
-
-    &::-webkit-input-placeholder {
-        text-transform: uppercase;
-    }
 }
 
 /* Button Style */
@@ -153,14 +146,6 @@ input, textarea {
     background: $pink;
 }
 
-.bg-dark-blue {
-    background: $dark-blue;
-}
-
-.bg-light-grey {
-    background: $light-grey;
-}
-
 /* Grid Structure */
 .grid-2 {
     display: grid;
@@ -170,6 +155,11 @@ input, textarea {
 .grid-3 {
     display: grid;
     grid-template-columns: 30% 30% 40%;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 .grid-reset-md {
@@ -196,36 +186,7 @@ input, textarea {
     }
 }
 
-/* Display Flex Style */
-.display-aic {
-    display: flex;
-    align-items: center;
-}
-
-.display-aic-jcfe {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
 /* Image Style */
 img {
     max-width: 100%;
 }
-
-.img-cover {
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    object-position: top;
-
-    @media #{$md-down} {
-        width: 100%;
-        height: 500px;
-    }
-
-    @media #{$sm-down} {
-        height: 350px;
-    }
-}
-
